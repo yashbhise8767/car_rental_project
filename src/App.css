@@ -1,0 +1,15 @@
+#root {
+  margin: 0 auto;
+}
+.ant-picker-calendar {
+  max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+.ant-picker-panel {
+  width: 100%; /* Allow full-width panel rendering */
+}
+
+.ant-picker-dropdown {
+  max-height: none !important; /* Allow dropdowns to fully expand */
+  overflow: visible !important;
+}

@@ -1,0 +1,13 @@
+/* .car-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .car-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+} */

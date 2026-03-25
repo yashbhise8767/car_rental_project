@@ -1,0 +1,126 @@
+.customer-order-list {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    font-family: Prata, serif;
+}
+
+h2.customer-order-list-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mobile-Friendly Single-Line Layout */
+.mobile-order-list {
+    display: none;
+    /* Hidden by default */
+}
+
+.order-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-field {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.status-field {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.order-actions {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: rgb(4, 38, 75);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .table-responsive {
+        display: none;
+        /* Hide the table on small screens */
+    }
+
+    .mobile-order-list {
+        display: block;
+        /* Show the mobile layout on small screens */
+    }
+
+    .customer-order-list {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .order-field {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .order-field span {
+        font-weight: bolder;
+        color: #333;
+        border-bottom: 2px solid #f0c040;
+    }
+}

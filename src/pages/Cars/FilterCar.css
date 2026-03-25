@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+
+}
+
+.search-input {
+  width: 25%;
+  padding: 10px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 16px;
+  position: relative;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f3f2f2;
+  text-align: center;
+  border: 1px solid #333;
+  background-color: white;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+.dropdown {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  flex: 1;
+  cursor: pointer;
+}
+
+/* .filter-bar .dropdown:valid{
+  border: 1px solid #333;
+} */
+
+.year-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.year-dropdown label {
+  font-size: 16px;
+}
+
+.price-range {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.price-range label {
+  font-size: 16px;
+}
+
+.range-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.price-input {
+  width: 80px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.range-slider {
+  display: flex;
+  gap: 5px;
+}
+
+.slider {
+  width: 150px;
+  height: 6px;
+  background: #ddd;
+  outline: none;
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+@media (min-width: 400px) and (max-width: 1100px) {
+  .filter-bar {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .search-input {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+
+  .dropdown,
+  .year-dropdown,
+  .price-range {
+    width: 100%;
+  }
+}

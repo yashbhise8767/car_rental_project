@@ -1,0 +1,391 @@
+.car-details-container-custom {
+  margin: 10px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  font-family: Prata, Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* multi images */
+.car-images-wrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.main-image {
+  flex: 3;
+}
+
+.large-car-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.thumbnail-column {
+  flex: 0 0 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: transform 0.2s ease;
+}
+
+.thumbnail-image:hover {
+  transform: scale(1.05);
+}
+
+/* multi images end */
+
+.car-details-main-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.car-details-title-custom {
+  flex: 1;
+  font-weight: 900;
+  color: #070101;
+}
+
+.car-details-title-custom h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #070101;
+}
+
+/* rating */
+.rate-car-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.rate-car-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.rate-car-btn:hover {
+  background: #0056b3;
+}
+
+.rate-car-error {
+  color: red;
+  margin-top: 5px;
+}
+
+.car-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.rating-number {
+  font-weight: bold;
+  color: #333;
+}
+
+.no-ratings {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #3f3d3d;
+  font-size: 14px;
+}
+
+.no-rating-text {
+  font-style: italic;
+}
+
+/* rating end */
+
+.car-details-price-custom {
+  text-align: right;
+}
+
+.car-details-price-text-custom {
+  color: #666;
+  font-size: small;
+}
+
+.car-details-price-custom p strong:first-child {
+  font-weight: 900;
+  color: #070101;
+}
+
+.car-details-price-custom p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.divider-custom {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.car-details-specs-custom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.car-details-specs-row-custom {
+  gap: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  /* margin-bottom: 10px; */
+  flex-direction: column;
+  color:brown;
+}
+
+.car-details-specs-row-custom span:nth-child(2) {
+  color: #000000;
+}
+
+.car-details-description-custom {
+  margin-top: 20px;
+}
+
+.car-details-description-custom h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #070101;
+}
+
+.car-details-description-text-custom {
+  font-size: 16px;
+  color: #444;
+}
+
+/* car features part */
+.car-features {
+  max-width: 400px;
+}
+
+.features-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #070101;
+  margin-bottom: 10px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  padding: 8px 12px;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+  /* border-left: 2px #ffd700 dotted; */
+  border-left: 2px solid #ffd700;
+}
+
+/* li.feature-item::marker {
+  color: #ffd700;
+} */
+
+.btn-custom {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-custom.btn-edit,
+.btn-custom.btn-orders,
+.btn-custom.btn-rents {
+  background-color: #002d5e;
+}
+
+.btn-custom.btn-delete {
+  background-color: #b22222;
+}
+
+.customer-rent-btn {
+  background-color: #f0c040;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  padding: 10px 50px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover,
+.customer-rent-btn:hover {
+  opacity: 0.8;
+  scale: 1.02;
+}
+
+.agency-actions-custom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.agency-actions-custom .btn-custom {
+  width: auto;
+  padding: 10px 20px;
+}
+
+/* Recommended Cars Section */
+.recommended-cars-section {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.recommended-cars-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.recommended-cars-list {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.recommended-car-card {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 15px);
+  max-width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s ease-in-out;
+}
+
+.recommended-car-card:hover {
+  transform: scale(1.05);
+}
+
+.recommended-car-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.recommended-car-info {
+  padding: 10px;
+  background: #fff;
+}
+
+.recommended-car-info h4 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.recommended-car-info p {
+  font-size: 0.9rem;
+  margin: 3px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .recommended-car-card {
+    width: calc(33.33% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .recommended-car-card {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .recommended-car-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* own by */
+.owned-by {
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.owned-by h3 {
+  margin-bottom: 10px;
+}
+
+.owned-by p {
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.owned-by p svg {
+  color: #ffd700;
+}
+
+/* own by end */
+
+@media (max-width: 768px) {
+  .car-details-main-custom {
+    flex-direction: column;
+  }
+
+  .car-details-price-custom {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .car-details-container-custom {
+    margin: 0 10px;
+  }
+}
+

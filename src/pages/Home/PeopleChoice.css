@@ -1,0 +1,119 @@
+.people-choice {
+    padding: 40px;
+    background-color: #dcdcdc;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+
+.header {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.car-card {
+    background-color: #8c8a8a;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; /* Ensure the card spans the container */ /* Set a maximum width for cards */
+    margin: 0 auto; /
+}
+
+.car-card img {
+    /* object-fit: cover; */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: auto;
+}
+
+.car-info h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.car-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.car-info h4 {
+    font-size: 16px;
+    color: #f0c040;
+    font-weight: bold;
+}
+
+/* Style for the 'See Details' button */
+.details-button {
+    padding: 10px 15px;
+    background-color: #f0c040;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #d49b35;
+}
+
+/* Arrow adjustments */
+.carousel .control-arrow {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    z-index: 2;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+.carousel .control-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel .control-prev.control-arrow {
+    left: -30px;
+}
+
+.carousel .control-next.control-arrow {
+    right: -30px;
+}
+
+/* Dots styling */
+.carousel .control-dots {
+    bottom: -20px;
+}
+
+.carousel .control-dots .dot {
+    background: #ddd;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    display: inline-block;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel .control-dots .dot:hover,
+.carousel .control-dots .dot.selected {
+    background: #f0c040;
+    opacity: 1;
+}

@@ -1,0 +1,137 @@
+/* General Container Styling */
+.update-car-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Prata, Arial, Helvetica, sans-serif;
+}
+
+.update-car-form-container h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffd700;
+}
+
+/* Two-Column Layout */
+.update-car-form-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.update-car-form-column {
+  width: 48%;
+  /* Adjusts the width of each column */
+}
+
+/* Input Fields and Dropdowns */
+.update-car-form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.update-car-form-control:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Form Group Styling */
+.update-car-form-group {
+  margin-bottom: 15px;
+}
+
+.update-car-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.update-car-textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical;
+  /* Allows resizing vertically */
+}
+
+.update-car-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Image Upload Section */
+.update-car-image-preview {
+  width: 150px;
+  height: 100px;
+  margin: 5px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.update-car-image-upload {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.update-car-underline {
+  color: #000;
+  border-bottom: 2px solid #ffd700;
+  width: max-content;
+  font-weight: bolder;
+}
+
+.update-car-file-input {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.update-car-submit-btn {
+  padding: 10px 20px;
+  background-color: #f0c040;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.update-car-submit-btn:hover {
+  background-color: #be931b;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

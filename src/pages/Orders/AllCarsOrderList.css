@@ -1,0 +1,125 @@
+.agency-all-cars-orders {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    min-height: 50vh;
+    font-family: 'Prata', serif;
+}
+
+.agency-all-cars-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Traditional Table Styles */
+.table-responsive {
+    overflow-x: auto;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: black;
+}
+
+th {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mobile-Friendly Single-Line Layout */
+.mobile-order-list {
+    display: none;
+   
+    /* Hidden by default */
+}
+
+.order-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-field {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.status-field {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.order-actions {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: rgb(0, 46, 92);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .table-responsive {
+        display: none;
+        /* Hide the table on small screens */
+    }
+
+    .mobile-order-list {
+        display: block;
+        /* Show the mobile layout on small screens */
+    }
+
+    .agency-all-cars-orders {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .order-field {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+   
+}

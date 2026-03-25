@@ -1,0 +1,218 @@
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px !important;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #f9f9f9;
+    font-family: Prata, serif, sans-serif;
+    /* height: 60px; */
+}
+
+.navbar-custom .logo-custom {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-custom ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.navbar-custom ul li {
+    margin: 0 15px;
+}
+
+.navbar-custom ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-custom ul li a:hover {
+    background-color: #f0c040;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hamburger menu styles */
+.hamburger-custom {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-custom .bar-custom {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Active link color */
+.navbar-custom ul li .active-link-custom {
+    background-color: #f0c040;
+    color: #fff;
+    font-weight: bold; 
+}
+
+.nav-item-custom .dropdown-custom .dropdown-toggle-custom .user-icon {
+    font-size: 24px;
+}
+
+/* Dropdown styles */
+.navbar-custom .dropdown-custom {
+    position: relative;
+    border-radius: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center; */
+    /* padding: 6px 2px; */
+
+}
+
+.navbar-custom .dropdown-toggle-custom {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+}
+
+.navbar-custom .dropdown-toggle-custom:hover {
+    color: #f0c040;
+}
+
+
+.navbar-custom .dropdown-menu-custom {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 160px;
+   
+    
+    
+}
+
+.navbar-custom .dropdown-menu-custom.show {
+    display: block;
+    margin-top: 25px;
+    /* transition: ease-in 1s; */
+}
+
+.dropdown-menu-custom .dropdown-item-profile-name {
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #f0c040;
+    border-radius: 0%;
+    cursor: default;
+}
+
+.navbar-custom .dropdown-item-custom {
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.navbar-custom .dropdown-item-custom:hover {
+    background-color: #f8f9fa;
+    color: #f0c040;
+}
+
+.logout-icon, .logout-text {
+  color: #e74c3c; /* Red color for logout */
+}
+
+.logout-icon:hover, .logout-text:hover {
+  color: #c0392b; /* Darker red on hover */
+}
+
+/* Mobile styles */
+@media (min-width: 300px) and (max-width: 1100px) {
+    .navbar-custom ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-custom ul.active {
+        display: flex;
+    }
+
+    .navbar-custom ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-custom ul li a {
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-custom .dropdown-menu-custom {
+        position: static;
+        box-shadow: none;
+        border: none;
+    }
+
+    .navbar-custom .dropdown-item-custom {
+        padding: 10px 20px;
+    }
+
+    .hamburger-custom {
+        display: flex;
+    }
+
+    /* Hide menu when closing */
+    .nav-links-custom {
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .nav-links-custom.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

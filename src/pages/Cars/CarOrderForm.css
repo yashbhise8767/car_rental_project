@@ -1,0 +1,49 @@
+.car-order-form {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background: #f9f9f9;
+          font-family: Prata, serif;
+        }
+        .car-order-form h2 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .form-group {
+          margin-bottom: 15px;
+        }
+        label {
+          font-weight: bold;
+          margin-bottom: 5px;
+          display: block;
+        }
+        input[type="text"] {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+        .submit-order {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          background: #000000;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        .submit-order:hover {
+          background: #0056b3;
+        }
+
+.unavailable-day {
+    color: red !important; /* Change text color to red */
+    background-color: #f8d7da !important; /* Light red background */
+    pointer-events: none; /* Make the day unclickable */
+    cursor: not-allowed;
+  }
+  

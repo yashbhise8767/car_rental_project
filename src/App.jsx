@@ -74,9 +74,7 @@ function App() {
             <Route path="/agency/cars/rents" element={<AllCarsRentList />} />
             <Route path="/agency/cars/:id/orders" element={<CarOrderList />} />
             <Route path="/agency/cars/:id/rents" element={<CarRentList />} />
-            <Route
-              path="/agency/verification-form"
-              element={<AgencyVerificationForm />}
+            <Route path="/agency/verification-form"element={<AgencyVerificationForm />}
             />
 
             {/* Customer Routes */}

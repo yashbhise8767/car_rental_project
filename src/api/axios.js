@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:8000", // Adjust backend URL
+    baseURL: " https://car-rental-project-backend-tuz7.onrender.com", // Adjust backend URL
 });
 
 axiosInstance.interceptors.request.use((config) => {
